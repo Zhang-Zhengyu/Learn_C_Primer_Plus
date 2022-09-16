@@ -138,3 +138,27 @@ int main() //目前的C规则
 
 **6.赋值**
 
+`num = 1;`
+
+该复制表达语句从右侧把值赋到左侧，以分号结尾。
+
+<br>
+
+**7.printf()函数**
+
+```
+printf("I am a simple ");
+printf("computer.\n");
+printf("My favourite number is %d because it is first.\n",unm);
+```
+
+圆括号表明`printf`是一个函数名，圆括号中的内容是从`main()`函数传递给`printf()`函数的信息。
+如上第一行把I am a simple 传递给printf()函数。该信息被称为参数，或函数的实际参数（*actual argument*）
+
+- 实际参数（简称实参）是传递给函数的特定值，
+- 形式参数（简称形参）是函数中用于存储的变量。
+
+\n组合代表一个换行符（*newline character*)
+
+换行符是一个转义序列（*escape sequence*）。转义序列用于代表难以表示或难以输入的字符，每个转义序列都以反斜杠（\）开始。
+
