@@ -57,7 +57,7 @@ C程序顶部的信息集合称作 ***头文件（header）***
 **3.注释**
 
 `/*这是一条注释*/`
-```
+```C
 /*这也是注释，
 分成两行。*/
 ```
@@ -94,7 +94,7 @@ C程序顶部的信息集合称作 ***头文件（header）***
 
 以前的C语言，要求把变量声明在块的顶部，其他语句不能再任何声明的前面：
 
-```
+```C
 int main() //旧规则
 {
     int doors;
@@ -108,7 +108,7 @@ int main() //旧规则
 C99 和C11 遵循C++的惯例，可以把声明放在块中任何位置（尽管如此，首次使用变量之前一定要先声明）
 
 可以这样写：
-```
+```C
 int main() //目前的C规则
 {
     //一些语句
@@ -146,7 +146,7 @@ int main() //目前的C规则
 
 **7.printf()函数**
 
-```
+```C
 printf("I am a simple ");
 printf("computer.\n");
 printf("My favourite number is %d because it is first.\n",unm);
@@ -162,3 +162,44 @@ printf("My favourite number is %d because it is first.\n",unm);
 
 换行符是一个转义序列（*escape sequence*）。转义序列用于代表难以表示或难以输入的字符，每个转义序列都以反斜杠（\）开始。
 
+%d相当一个占位符，%提醒程序该处打印一个变量，d表明把变量作为十进制整数打印
+
+<br>
+
+**8.return 语句**
+
+见第十一章
+
+<br>
+
+## 2.3 简单程序的结构
+
+```C
+int main(void) //函数头
+
+{
+  int q; //声明
+  q = 1; //语句
+  printf("%d is neat.\n",q);//语句
+  return 0;
+
+}
+```
+
+简而言之
+```C
+#include <stdio.h>
+int main(void)
+{
+  语句
+  return 0；
+}
+```
+
+## 2.4 提高程序的可读性
+1. 选择有意义的函数名
+2. 写注释
+3. 在函数中用空行分隔概念上的多个部分
+4. 每条语句各占一行
+
+## 2.5 
