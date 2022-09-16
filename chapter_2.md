@@ -202,4 +202,20 @@ int main(void)
 3. 在函数中用空行分隔概念上的多个部分
 4. 每条语句各占一行
 
-## 2.5 
+## 2.5 进一步使用C
+
+```C
+// fathm_ft.c -- 把2英寻转换成英尺
+#include <stdio.h>
+int main(void) 
+{
+	int feet, fathoms;
+  
+	fathoms = 2;
+	feet = 6 * fathoms;
+	printf("There are %d feet in %d fathoms!\n", feet, fathoms);
+	printf("Yes, I said %d feet!\n", 6 * fathoms);
+	return 0;
+}
+```
+
